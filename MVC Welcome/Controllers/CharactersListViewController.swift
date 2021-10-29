@@ -75,8 +75,9 @@ extension CharactersListViewController: UITableViewDataSource{
     cell.textLabel?.text = character.name
     return cell
   }
-  
-// Updates search results
+
+  // MARK: - Search Methods
+  // Updates search results
   func updateSearchResults(for searchController: UISearchController) {
     let searchBar = searchController.searchBar
     let scopeButton = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
@@ -99,7 +100,6 @@ extension CharactersListViewController: UITableViewDataSource{
     }
     tableView.reloadData()
   }
-
 }
 
 
