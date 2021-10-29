@@ -75,6 +75,7 @@ extension CharactersListViewController: UITableViewDataSource{
     cell.textLabel?.text = character.name
     return cell
   }
+  
 // Updates search results
   func updateSearchResults(for searchController: UISearchController) {
     let searchBar = searchController.searchBar
